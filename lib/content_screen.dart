@@ -2,18 +2,28 @@ import 'package:flutter/material.dart';
 
 import 'constants/app_images.dart';
 import 'constants/my_colors.dart';
-import 'constants/mycustom_appbar.dart';
 
 class ContentScreen extends StatelessWidget {
   String pathImages;
   String content;
+  String appbarTitle;
 
-  ContentScreen({required this.pathImages, required this.content});
+  ContentScreen(
+      {required this.pathImages,
+      required this.content,
+      required this.appbarTitle});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MycustomAppbar.myAppBar,
+      appBar: AppBar(
+        backgroundColor: MyColors.colorPrimaryDark,
+        title: Text(
+          appbarTitle,
+          style: TextStyle(
+              color: MyColors.white, fontWeight: FontWeight.w600, fontSize: 20),
+        ),
+      ),
       body: Container(
         height: double.infinity,
         width: double.infinity,

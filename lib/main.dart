@@ -1,7 +1,5 @@
-import 'package:assimgnment_flutter_part2/andriod_screen.dart';
-import 'package:assimgnment_flutter_part2/fullstack_screen.dart';
 import 'package:assimgnment_flutter_part2/home_screen.dart';
-import 'package:assimgnment_flutter_part2/ios_screen.dart';
+import 'package:assimgnment_flutter_part2/static_course_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,9 +13,7 @@ class Myapplication extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
-        AndriodScreen.routeName: (context) => AndriodScreen(),
-        IosScreen.routeName: (context) => IosScreen(),
-        FullstackScreen.routeName: (context) => FullstackScreen()
+        StaticCoursePage.routeName: (context) => StaticCoursePage()
       },
       initialRoute: HomeScreen.routeName,
     );

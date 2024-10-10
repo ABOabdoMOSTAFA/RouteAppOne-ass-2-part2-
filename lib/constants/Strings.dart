@@ -1,4 +1,4 @@
-abstract class Strings {
+abstract class AppStrings {
   static const String andriodContant = '''
   Part 1 ( Java SE)
 1. Introduction to Java Programming
